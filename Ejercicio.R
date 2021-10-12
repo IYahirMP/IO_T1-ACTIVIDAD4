@@ -14,11 +14,14 @@ restricciones_izquierdo <- matrix(c(2, 1.5, 4, 6), nrow = 2, byrow = T)
 restricciones_izquierdo
 
 # Se guardan los símbolos de desigualdad de cada restricción en un vector
-restricciones.direccion <- c("<=", "<=")
+restricciones_direccion <- c("<=", "<=")
 # Se muestra el valor de la matriz
-restricciones.direccion
+restricciones_direccion
 
 # Se crea un vector con los parámetros del lado derecho de cada restricción
 restricciones_derecho <- c(650, 70)
 # Se muestra el valor del vector
 restricciones_derecho
+
+# Se ejecuta una instrucción que muestra la solución que maximiza la función
+lp(direction = "max", objective.in = funcion_objetivo, const.mat = restricciones_izquierdo, const.dir = restricciones_direccion, const.rhs = restricciones_derecho)
