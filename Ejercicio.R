@@ -17,3 +17,8 @@ restricciones_izquierdo
 restricciones.direccion <- c("<=", "<=")
 # Se muestra el valor de la matriz
 restricciones.direccion
+
+# Se crea un vector con los parámetros del lado derecho de cada restricción
+restricciones_derecho <- c(650, 70)
+# Se muestra el valor del vector
+restricciones_derecho
