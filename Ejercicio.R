@@ -25,3 +25,6 @@ restricciones_derecho
 
 # Se ejecuta una instrucción que muestra la solución que maximiza la función
 lp(direction = "max", objective.in = funcion_objetivo, const.mat = restricciones_izquierdo, const.dir = restricciones_direccion, const.rhs = restricciones_derecho)
+
+# Se ejecuta la instrucción que da los valores de x1 y x2 que conforman la solución óptima
+lp(direction = "max", objective.in = funcion_objetivo, const.mat = restricciones_izquierdo, const.dir = restricciones_direccion, const.rhs = restricciones_derecho)$solution
