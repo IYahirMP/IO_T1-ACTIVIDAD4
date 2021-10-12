@@ -12,3 +12,8 @@ funcion_objetivo
 restricciones_izquierdo <- matrix(c(2, 1.5, 4, 6), nrow = 2, byrow = T)
 # Se muestra el valor de la matriz
 restricciones_izquierdo
+
+# Se guardan los símbolos de desigualdad de cada restricción en un vector
+restricciones.direccion <- c("<=", "<=")
+# Se muestra el valor de la matriz
+restricciones.direccion
